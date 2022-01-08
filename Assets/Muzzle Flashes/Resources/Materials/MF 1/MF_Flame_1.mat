@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MF_Flame_1
+  m_Shader: {fileID: 4800000, guid: 1116a4cc9a865f04b9156d87e9c0d642, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Core:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c9b1f408c4334eb42862180b8506e7cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex3coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CoreStrength: 2
+    - _CutOutLightCore: 1
+    - _Distortion: 0
+    - _Float0: 0
+    - _Float1: 0
+    - _Float2: 0
+    - _InvFade: 3
+    - _POW: 1
+    - _SoftParticles: 0
+    - _TintStrength: 2.5
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CoreColor: {r: 0.7794118, g: 0.4671728, b: 0.32666522, a: 0.341}
+    - _CoreSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+    - _Vector0: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
