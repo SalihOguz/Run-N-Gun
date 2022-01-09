@@ -76,6 +76,8 @@
           <e p="BulletPool.cs" t="Include" />
           <e p="BulletPoolsController.cs" t="Include" />
           <e p="BulletType.cs" t="Include" />
+          <e p="Door.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
           <e p="LockCameraX.cs" t="Include" />
           <e p="PlatformPooler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
