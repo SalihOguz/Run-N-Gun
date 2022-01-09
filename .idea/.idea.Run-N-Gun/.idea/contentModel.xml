@@ -72,8 +72,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
+          <e p="BulletPool.cs" t="Include" />
+          <e p="BulletPoolsController.cs" t="Include" />
+          <e p="BulletType.cs" t="Include" />
           <e p="LockCameraX.cs" t="Include" />
+          <e p="PlatformPooler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
+          <e p="Weapon.cs" t="Include" />
+          <e p="WeaponControlller.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
