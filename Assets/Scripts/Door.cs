@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     [SerializeField] private List<Transform> doorEdges;
     [SerializeField] private List<int> weaponId;
     [SerializeField] private List<ParticleSystem> particle;
+    [SerializeField] private List<GameObject> weaponList;
 
     private WeaponControlller _weaponControlller;
     
@@ -25,12 +26,22 @@ public class Door : MonoBehaviour
             {
                 _weaponControlller.SetWeaponActive(weaponId[0]);
                 particle[0].Play();
+                weaponList[0].SetActive(false);
             }
             else
             {
                 _weaponControlller.SetWeaponActive(weaponId[1]);
                 particle[1].Play();
+                weaponList[1].SetActive(false);
             }
+
+            StartCoroutine(Destroy());
         }
+    }
+    
+    private IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 }

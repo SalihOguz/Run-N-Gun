@@ -64,7 +64,7 @@ public class Bullet : MonoBehaviour
         _isFlying = false;
         explodeParticle.Play();
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.4f);
 
         if (!_isFlying)
         {
