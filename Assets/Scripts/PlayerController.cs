@@ -18,10 +18,17 @@ public class PlayerController : MonoBehaviour
     private float mZCoord;
     private Vector3 mOffset;
     private bool _hasGameStarted;
+    private WeaponControlller _weaponControlller;
 
     private void Start()
     {
-        
+        _weaponControlller = FindObjectOfType<WeaponControlller>();
+        _weaponControlller.HasRifle += ToggleHasRifle;
+    }
+
+    private void ToggleHasRifle(bool hasRifle)
+    {
+        animator.SetBool("hasPistol", !hasRifle);
     }
 
     void Update()
@@ -82,16 +89,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.CompareTag("Wall"))
+        {
+            Lose();
+        }
+    }
+
     private void Lose()
     {
-        SetActive(false);
+        animator.Play("Die");
+        _isActive = false;
         OnDead?.Invoke();
         StartCoroutine(LoseDelay());
     }
 
     private IEnumerator LoseDelay()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Game");
     }
 }

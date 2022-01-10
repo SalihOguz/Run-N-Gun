@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WeaponControlller : MonoBehaviour
 {
+    public UnityAction<bool> HasRifle;
+    
     [SerializeField] private List<Weapon> weaponsList;
 
     private BulletPoolsController _bulletPoolsController;
@@ -28,5 +31,7 @@ public class WeaponControlller : MonoBehaviour
         {
             weaponsList[i].gameObject.SetActive(id == i);
         }
+
+        HasRifle?.Invoke(id == 2);
     }
 }
