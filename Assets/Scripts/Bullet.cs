@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float speed = 16f;
     [SerializeField] private float spreadAngle = 0.5f;
     [SerializeField] private ParticleSystem explodeParticle;
+    [SerializeField] private MeshRenderer sphere;
     
     private bool _isFlying;
     private float _flyTimer;
@@ -23,6 +24,7 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
         transform.position = startPos;
         transform.eulerAngles = Vector3.up * Random.Range(-spreadAngle, spreadAngle);
+        sphere.enabled = true;
         gameObject.SetActive(true);
         _isFlying = true;
         _flyTimer = 0;
@@ -62,9 +64,10 @@ public class Bullet : MonoBehaviour
     private IEnumerator Explode()
     {
         _isFlying = false;
+        sphere.enabled = false;
         explodeParticle.Play();
         
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.5f);
 
         if (!_isFlying)
         {

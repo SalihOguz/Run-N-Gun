@@ -7,12 +7,12 @@ public class Obstacle : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigidbody;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Bullet"))
+        if (other.collider.CompareTag("Bullet"))
         {
             Vector3 pos = other.transform.position;
-            rigidbody.AddForceAtPosition((Vector3.up + (transform.position - pos).normalized) * 500f, other.transform.position);
+            rigidbody.AddForceAtPosition((Vector3.up + (transform.position - pos).normalized) * 200f, other.transform.position);
         }
     }
 }
