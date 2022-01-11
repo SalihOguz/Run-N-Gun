@@ -11,26 +11,23 @@ public class Weapon : MonoBehaviour
 {
     public UnityAction<Vector3, BulletType> OnShoot;
     
-    // [SerializeField] private Transform bulletParent;
+    [SerializeField] private Rigidbody rigidbody;
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private ParticleSystem muzzleParticle;
     [SerializeField] private float fireRate = 5f;
     [SerializeField] private int bulletPerBurst = 1;
-
     [SerializeField] private BulletType bulletType;
-    
-    // [SerializeField] private CinemachineVirtualCamera _virtualCamera;
-    // private CinemachineBasicMultiChannelPerlin _camShake;
-    
+
     private float _shootTimer;
-    
-    void Start()
-    {
-        // _camShake = _virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-    }
+    private bool _canShoot = true;
 
     private void Update()
     {
+        if (!_canShoot)
+        {
+            return;
+        }
+        
         _shootTimer += Time.deltaTime;
 
         if (_shootTimer >= 1f / fireRate)
@@ -46,17 +43,14 @@ public class Weapon : MonoBehaviour
     private void Shoot()
     {
         muzzleParticle.Play();
+        Debug.Log(muzzlePoint.position.x + "Weapon");
         OnShoot?.Invoke(muzzlePoint.position, bulletType);
     }
 
-
-    // private void CamShake()
-    // {
-    //     DOTween.To(() => _camShake.m_AmplitudeGain, x => _camShake.m_AmplitudeGain = x, 
-    //         1, 1f/(fireRate/2f)).OnComplete(() =>
-    //     {
-    //         DOTween.To(() => _camShake.m_AmplitudeGain, x => _camShake.m_AmplitudeGain = x,
-    //             0, 1f/(fireRate/2f));
-    //     });
-    // }
+    public void Stop()
+    {
+        _canShoot = false;
+        rigidbody.isKinematic = false;
+        rigidbody.AddForce(Vector3.up * 5, ForceMode.Impulse);
+    }
 }

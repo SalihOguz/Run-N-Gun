@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using TMPro;
 using UnityEngine;
 
@@ -11,13 +12,17 @@ public class BreakableObstacle : MonoBehaviour
     [SerializeField] private TextMeshPro healthText;
     [SerializeField] private Collider collider;
     [SerializeField] private ParticleSystem particle;
+    [SerializeField] private CinemachineVirtualCamera _virtualCamera;
 
     private int _initialHealth;
+    private CinemachineBasicMultiChannelPerlin _camShake;
+    private CamShakeController _camShakeController;
     
     private void Start()
     {
         healthText.text = health.ToString();
         _initialHealth = health;
+        _camShakeController = CamShakeController.Instance;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,9 +39,12 @@ public class BreakableObstacle : MonoBehaviour
                 particle.Play();
 
                 collider.enabled = false;
+                _camShakeController.CamShake();
             }
         }
     }
+    
+    
 
     public void ResetObstacle(Vector3 pos)
     {

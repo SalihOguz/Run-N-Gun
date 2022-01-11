@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Wall"))
+        if (other.CompareTag("Obstacle"))
         {
             Lose();
         }
@@ -89,17 +89,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.collider.CompareTag("Wall"))
-        {
-            Lose();
-        }
-    }
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.collider.CompareTag("Obstacle"))
+    //     {
+    //         Lose();
+    //     }
+    // }
 
     private void Lose()
     {
-        animator.Play("Die");
+        animator.enabled = false;
+        _weaponControlller.Stop();
         _isActive = false;
         OnDead?.Invoke();
         StartCoroutine(LoseDelay());

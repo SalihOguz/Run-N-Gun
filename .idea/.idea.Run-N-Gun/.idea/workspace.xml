@@ -22,30 +22,13 @@
     <list default="true" id="dfc0a424-43e6-4be7-8c76-2c1f37d1fbd0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Explosions/FireballExplosion/ExplosionFireballGreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Explosions/FireballExplosion/ExplosionFireballGreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Explosions/FireballExplosion/ExplosionFireballPink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Explosions/FireballExplosion/ExplosionFireballPink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Baloo-Regular SD Border.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Baloo-Regular SD Border.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Doors/SM_PolygonPrototype_Buildings_DoorFrame_01P.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Doors/SM_PolygonPrototype_Buildings_DoorFrame_01P.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Grounds/SM_PolygonPrototype_Buildings_Floor_5x5_01P.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Grounds/SM_PolygonPrototype_Buildings_Floor_5x5_01P.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Buildings_Block_1x1_01P.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Buildings_Block_1x1_01P.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Primitive_Cylander_01P.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Primitive_Cylander_01P.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Primitive_Sphere_01P.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Primitive_Sphere_01P.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Prop_Crate_03.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Obstacles/SM_PolygonPrototype_Prop_Crate_03.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_WaterPistol_01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_WaterPistol_01.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_Watergun_01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_Watergun_01.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_Watergun_02.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/SM_Wep_Watergun_02.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullets/BlueBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullets/BlueBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/BreakableCube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/BreakableCube.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Cube.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakableObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BreakableObstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakableObstaclePart.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakableObstaclePart.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +41,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletPoolsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CamShakeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Gameguru/drillrunner/Assets/Scripts/WallPooler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -82,13 +66,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakableObstaclePart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakableObstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CamShakeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
       </list>
     </option>
@@ -134,6 +119,7 @@
       <workItem from="1641792371877" duration="2005000" />
       <workItem from="1641833826779" duration="2350000" />
       <workItem from="1641871101098" duration="4667000" />
+      <workItem from="1641924278426" duration="2749000" />
     </task>
     <servers />
   </component>

@@ -34,11 +34,11 @@ public class Door : MonoBehaviour
                 particle[1].Play();
                 weaponList[1].SetActive(false);
             }
-
+    
             StartCoroutine(Destroy());
         }
     }
-    
+
     private IEnumerator Destroy()
     {
         yield return new WaitForSeconds(5f);

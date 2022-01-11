@@ -22,6 +22,7 @@ public class WeaponControlller : MonoBehaviour
 
     private void OnShoot(Vector3 muzzlePos, BulletType bulletType)
     {
+        Debug.Log(muzzlePos.x + "WeaponController");
         _bulletPoolsController.Shoot(muzzlePos, bulletType);
     }
 
@@ -33,5 +34,15 @@ public class WeaponControlller : MonoBehaviour
         }
 
         HasRifle?.Invoke(id == 2);
+    }
+
+    public void Stop()
+    {
+        for (int i = 0; i < weaponsList.Count; i++)
+        {
+            weaponsList[i].Stop();
+            weaponsList[i].OnShoot -= OnShoot;
+            weaponsList[i].transform.parent = null;
+        }
     }
 }
