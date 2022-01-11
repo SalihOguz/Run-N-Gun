@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour
     
     // [SerializeField] private Transform bulletParent;
     [SerializeField] private Transform muzzlePoint;
+    [SerializeField] private ParticleSystem muzzleParticle;
     [SerializeField] private float fireRate = 5f;
     [SerializeField] private int bulletPerBurst = 1;
 
@@ -44,6 +45,7 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
+        muzzleParticle.Play();
         OnShoot?.Invoke(muzzlePoint.position, bulletType);
     }
 

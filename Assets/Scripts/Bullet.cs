@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
     public void Shoot(Vector3 startPos)
     {
         gameObject.SetActive(false);
+        startPos.y = 1.2f;
         transform.position = startPos;
         transform.eulerAngles = Vector3.up * Random.Range(-spreadAngle, spreadAngle);
         sphere.enabled = true;
@@ -47,9 +48,9 @@ public class Bullet : MonoBehaviour
         transform.position += transform.forward * (Time.deltaTime * speed);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.collider.CompareTag("Obstacle"))
+        if (other.CompareTag("Obstacle"))
         {
             StartCoroutine(Explode());
         }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 822924868364636903}
   - component: {fileID: 822924868363538471}
   - component: {fileID: 9094167981021974546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.78, y: 0.099999994, z: 4.9999847}
-  m_Center: {x: 2.5, y: -0.049999997, z: 2.4999924}
+  m_Size: {x: 5, y: 0.3, z: 5}
+  m_Center: {x: 2.5, y: -0.15, z: 2.5}
 --- !u!1001 &822924868822093640
 PrefabInstance:
   m_ObjectHideFlags: 0

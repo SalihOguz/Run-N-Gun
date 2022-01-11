@@ -73,7 +73,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BreakableObstacle.cs" t="Include" />
-          <e p="BreakableObstaclePart.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="BulletPool.cs" t="Include" />
           <e p="BulletPoolsController.cs" t="Include" />
