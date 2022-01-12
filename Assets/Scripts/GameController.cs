@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject tapToPlay;
-
+    [SerializeField] private GameObject dragTut;
+    
     [SerializeField] private WeaponControlller weaponControlller;
     
     private bool _isPlaying;
@@ -29,6 +30,7 @@ public class GameController : MonoBehaviour
     {
         _isPlaying = true;
         tapToPlay.SetActive(false);
+        dragTut.SetActive(false);
         weaponControlller.SetWeaponActive(0);
     }
 }

@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc0a424-43e6-4be7-8c76-2c1f37d1fbd0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Run-N-Gun/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakableObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BreakableObstacle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletPoolsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakableObstaclePart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" />
@@ -74,6 +69,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CamShakeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponControlller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
       </list>
     </option>
@@ -119,7 +115,8 @@
       <workItem from="1641792371877" duration="2005000" />
       <workItem from="1641833826779" duration="2350000" />
       <workItem from="1641871101098" duration="4667000" />
-      <workItem from="1641924278426" duration="2749000" />
+      <workItem from="1641924278426" duration="3018000" />
+      <workItem from="1642021338395" duration="898000" />
     </task>
     <servers />
   </component>

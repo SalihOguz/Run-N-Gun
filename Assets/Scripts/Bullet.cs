@@ -23,7 +23,9 @@ public class Bullet : MonoBehaviour
     {
         Debug.Log(startPos.x + "Bullet");
         gameObject.SetActive(false);
-        // startPos.y = 1.2f;
+        startPos.z += 1.5f;
+        startPos.y = 1.2f;
+        startPos.x -= 0.09f;
         transform.position = startPos;
         transform.eulerAngles = Vector3.up * Random.Range(-spreadAngle, spreadAngle);
         sphere.enabled = true;
