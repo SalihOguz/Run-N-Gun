@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,10 +16,20 @@ public class GameController : MonoBehaviour
     [SerializeField] private WeaponControlller weaponControlller;
     
     private bool _isPlaying;
+    private PlayerController _playerController;
     
     void Start()
     {
         levelText.text = "LEVEL " + (PlayerPrefs.GetInt("Level") + 1);
+        _playerController = FindObjectOfType<PlayerController>();
+        _playerController.OnDead += Lose;
+        _playerController.OnWon += Won;
+    }
+
+    private void OnDestroy()
+    {
+        _playerController.OnDead -= Lose;
+        _playerController.OnWon -= Won;
     }
 
     void Update()

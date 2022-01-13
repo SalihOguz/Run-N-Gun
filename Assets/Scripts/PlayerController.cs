@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -8,10 +10,12 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public UnityAction OnDead;
+    public UnityAction OnWon;
     
     [SerializeField] private float speed = 8f;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Animator animator;
+    [SerializeField] private CinemachineVirtualCamera finishCam;
 
     private bool _isActive = true;
     
@@ -19,13 +23,17 @@ public class PlayerController : MonoBehaviour
     private Vector3 mOffset;
     private bool _hasGameStarted;
     private WeaponControlller _weaponControlller;
-    private GameController _gameController;
+    private bool _finishReached;
 
     private void Start()
     {
         _weaponControlller = FindObjectOfType<WeaponControlller>();
-        _gameController = FindObjectOfType<GameController>();
         _weaponControlller.HasRifle += ToggleHasRifle;
+    }
+
+    private void OnDestroy()
+    {
+        _weaponControlller.HasRifle -= ToggleHasRifle;
     }
 
     private void ToggleHasRifle(bool hasRifle)
@@ -72,21 +80,39 @@ public class PlayerController : MonoBehaviour
 
         return mainCamera.ScreenToWorldPoint(mousePoint);
     }
-    
-    public void SetActive(bool isActive)
-    {
-        _isActive = isActive;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Obstacle"))
         {
-            Lose();
+            if (!_finishReached)
+            {
+                Lose();
+            }
+            else
+            {
+                OnWon?.Invoke();
+                animator.enabled = false;
+                _weaponControlller.Stop();
+                _isActive = false;
+            }
         }
         else if (other.CompareTag("Finish"))
         {
-            _gameController.Won();
+            if (!_finishReached)
+            {
+                _finishReached = true;
+                finishCam.Priority = 100;
+            }
+            else
+            {
+                OnWon?.Invoke();
+                _isActive = false;
+                animator.Play("Dance");
+                animator.transform.DORotate(new Vector3(0, 180, 0), 1f);
+                _weaponControlller.Stop();
+                finishCam.Priority = 0;
+            }
         }
     }
 
@@ -96,6 +122,5 @@ public class PlayerController : MonoBehaviour
         _weaponControlller.Stop();
         _isActive = false;
         OnDead?.Invoke();
-        _gameController.Lose();
     }
 }
