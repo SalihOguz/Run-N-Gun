@@ -158,7 +158,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7003507815456120558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0963}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1049}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8379172239890469314}
@@ -167,7 +167,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.5, y: 0.5}
-  m_SizeDelta: {x: 0.8499, y: 0.868}
+  m_SizeDelta: {x: 0.9147, y: 0.868}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4056834987153794148
 MeshRenderer:
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 88
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d6120a6bcf5e5b45a1ced1eb2e0ba04, type: 2}
   m_sharedMaterial: {fileID: 1143791259522314655, guid: 6d6120a6bcf5e5b45a1ced1eb2e0ba04, type: 2}
