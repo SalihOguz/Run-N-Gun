@@ -43,7 +43,6 @@ public class Weapon : MonoBehaviour
     private void Shoot()
     {
         muzzleParticle.Play();
-        Debug.Log(muzzlePoint.position.x + "Weapon");
         OnShoot?.Invoke(muzzlePoint.position, bulletType);
     }
 

@@ -22,7 +22,6 @@ public class WeaponControlller : MonoBehaviour
 
     private void OnShoot(Vector3 muzzlePos, BulletType bulletType)
     {
-        Debug.Log(muzzlePos.x + "WeaponController");
         _bulletPoolsController.Shoot(muzzlePos, bulletType);
     }
 

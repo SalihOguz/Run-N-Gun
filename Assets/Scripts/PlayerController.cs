@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 mOffset;
     private bool _hasGameStarted;
     private WeaponControlller _weaponControlller;
+    private GameController _gameController;
 
     private void Start()
     {
         _weaponControlller = FindObjectOfType<WeaponControlller>();
+        _gameController = FindObjectOfType<GameController>();
         _weaponControlller.HasRifle += ToggleHasRifle;
     }
 
@@ -84,18 +86,9 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.CompareTag("Finish"))
         {
-            SetActive(false);
-            StartCoroutine(LoseDelay());
+            _gameController.Won();
         }
     }
-
-    // private void OnCollisionEnter(Collision other)
-    // {
-    //     if (other.collider.CompareTag("Obstacle"))
-    //     {
-    //         Lose();
-    //     }
-    // }
 
     private void Lose()
     {
@@ -103,12 +96,6 @@ public class PlayerController : MonoBehaviour
         _weaponControlller.Stop();
         _isActive = false;
         OnDead?.Invoke();
-        StartCoroutine(LoseDelay());
-    }
-
-    private IEnumerator LoseDelay()
-    {
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("Game");
+        _gameController.Lose();
     }
 }

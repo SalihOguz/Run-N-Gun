@@ -12,10 +12,8 @@ public class BreakableObstacle : MonoBehaviour
     [SerializeField] private TextMeshPro healthText;
     [SerializeField] private Collider collider;
     [SerializeField] private ParticleSystem particle;
-    [SerializeField] private CinemachineVirtualCamera _virtualCamera;
 
     private int _initialHealth;
-    private CinemachineBasicMultiChannelPerlin _camShake;
     private CamShakeController _camShakeController;
     
     private void Start()
@@ -43,8 +41,6 @@ public class BreakableObstacle : MonoBehaviour
             }
         }
     }
-    
-    
 
     public void ResetObstacle(Vector3 pos)
     {

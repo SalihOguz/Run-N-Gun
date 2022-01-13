@@ -21,9 +21,8 @@ public class Bullet : MonoBehaviour
 
     public void Shoot(Vector3 startPos)
     {
-        Debug.Log(startPos.x + "Bullet");
         gameObject.SetActive(false);
-        startPos.z += 1.5f;
+        startPos.z += 1.5f; //  added to quickly solve a problem
         startPos.y = 1.2f;
         startPos.x -= 0.09f;
         transform.position = startPos;
