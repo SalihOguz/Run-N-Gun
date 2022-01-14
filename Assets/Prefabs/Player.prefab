@@ -49,6 +49,7 @@ MonoBehaviour:
   speed: 8
   mainCamera: {fileID: 0}
   animator: {fileID: 7971598402892156743}
+  finishCam: {fileID: 0}
 --- !u!54 &2073356760788000206
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -347,6 +348,24 @@ Transform:
   m_Father: {fileID: 8062016889011672311}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8066559847632744502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066559846154744266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b22b9712b6943242a25a44b14572839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 0}
+  muzzlePoint: {fileID: 8066559847878200809}
+  muzzleParticle: {fileID: 8066559847893388803}
+  fireRate: 7
+  bulletPerBurst: 1
+  bulletType: 0
 --- !u!114 &8066559846818485151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b22b9712b6943242a25a44b14572839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody: {fileID: 0}
   muzzlePoint: {fileID: 8066559846500311370}
   muzzleParticle: {fileID: 8066559846519693984}
   fireRate: 4.5
@@ -409,28 +429,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b22b9712b6943242a25a44b14572839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody: {fileID: 0}
   muzzlePoint: {fileID: 8066559847631546690}
   muzzleParticle: {fileID: 8066559847617342120}
-  fireRate: 3
+  fireRate: 3.5
   bulletPerBurst: 3
   bulletType: 2
---- !u!114 &8066559847632744502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8066559846154744266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b22b9712b6943242a25a44b14572839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  muzzlePoint: {fileID: 8066559847878200809}
-  muzzleParticle: {fileID: 8066559847893388803}
-  fireRate: 7
-  bulletPerBurst: 1
-  bulletType: 0
 --- !u!1 &8067116270664012049
 GameObject:
   m_ObjectHideFlags: 0

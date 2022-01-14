@@ -1,11 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Cinemachine;
 using TMPro;
 using UnityEngine;
 
-public class BreakableObstacle : MonoBehaviour
+public class BreakableObstacle : ObstacleBase
 {
     [SerializeField] private MeshRenderer shell;
     [SerializeField] private int health;
@@ -18,37 +15,35 @@ public class BreakableObstacle : MonoBehaviour
     
     private void Start()
     {
+        base.Init();
         healthText.text = health.ToString();
         _initialHealth = health;
         _camShakeController = CamShakeController.Instance;
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected override void OnBulletCollide(Collider other)
     {
-        if (other.CompareTag("Bullet"))
+        health = Math.Max(health - 1, 0);
+        healthText.text = health.ToString();
+
+        if (health == 0)
         {
-            health = Math.Max(health - 1, 0);
-            healthText.text = health.ToString();
+            healthText.gameObject.SetActive(false);
+            shell.enabled = false;
+            particle.Play();
 
-            if (health == 0)
-            {
-                healthText.gameObject.SetActive(false);
-                shell.enabled = false;
-                particle.Play();
-
-                collider.enabled = false;
-                _camShakeController.CamShake();
-            }
+            collider.enabled = false;
+            _camShakeController.CamShake();
         }
     }
 
-    public void ResetObstacle(Vector3 pos)
+    public override void ResetObstacle()
     {
+        base.ResetObstacle();
         health = _initialHealth;
         healthText.text = health.ToString();
         healthText.gameObject.SetActive(true);
         shell.enabled = true;
         collider.enabled = true;
-        transform.position = pos;
     }
 }
