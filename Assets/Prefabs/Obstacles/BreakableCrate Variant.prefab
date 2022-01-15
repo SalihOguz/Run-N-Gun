@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4011435124816163962, guid: 90d907edffc52d8439316e504c4b8273, type: 3}
       propertyPath: m_Name
-      value: BreakableCrate
+      value: BreakableCrate Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5535842123758981800, guid: 90d907edffc52d8439316e504c4b8273, type: 3}
       propertyPath: m_Size.x

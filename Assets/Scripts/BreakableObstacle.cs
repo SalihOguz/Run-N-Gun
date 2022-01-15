@@ -9,6 +9,7 @@ public class BreakableObstacle : ObstacleBase
     [SerializeField] private TextMeshPro healthText;
     [SerializeField] private Collider collider;
     [SerializeField] private ParticleSystem particle;
+    [SerializeField] private Rigidbody rb;
 
     private int _initialHealth;
     private CamShakeController _camShakeController;
@@ -45,5 +46,6 @@ public class BreakableObstacle : ObstacleBase
         healthText.gameObject.SetActive(true);
         shell.enabled = true;
         collider.enabled = true;
+        rb.velocity = Vector3.zero;
     }
 }

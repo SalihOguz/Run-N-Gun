@@ -132,6 +132,7 @@ MonoBehaviour:
   healthText: {fileID: 584374275508990987}
   collider: {fileID: 5535842123758981800}
   particle: {fileID: 5734304027704787204}
+  rb: {fileID: 1828383857556115921}
 --- !u!1 &7003507815456120558
 GameObject:
   m_ObjectHideFlags: 0
