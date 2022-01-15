@@ -310,9 +310,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8379172239890469314}
     m_Modifications:
+    - target: {fileID: 1550178068113958819, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550178068113966771, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550178068113971231, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550178068113976855, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1550178068114133819, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
       propertyPath: m_Name
       value: CubeExplosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550178068114133819, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1550178068114298733, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
       propertyPath: m_RootOrder
@@ -356,6 +376,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1550178068114298733, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563746670732235660, guid: a4f73e8b0648ef3478a1a1e8a1797469, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
